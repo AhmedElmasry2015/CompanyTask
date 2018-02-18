@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
     $('.country').click(function(){
-      $(this).css('background','#E0E0E0').siblings().css('background','#f0f0f0');
+      $(this).css({'background':'#E0E0E0','border-top':'2px solid #2E5B78'}).siblings().css({'background':'#f0f0f0','border-style':'none'});
     });
     $('#egy').click(function(){
       $('.egypt').removeClass('disable-country');
@@ -104,3 +104,7 @@ $(document).ready(function(){
       $('.egypt ').addClass('disable-country');
     });
   });
+  
+  
+  $("html").height(200).niceScroll()
+  

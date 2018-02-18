@@ -111,9 +111,12 @@ html {
     display: inline-block;
     margin-right: 4.1%;
     width: 100px;
+    text-align: center;
     cursor: pointer; }
     .country-section .country p {
       text-align: center;
+      color: #2E5B78; }
+    .country-section .country .fa-angle-down {
       color: #2E5B78; }
   .country-section .disable-country {
     display: none; }
@@ -148,7 +151,8 @@ html {
     color: #2E5B78; }
   .country-section .bor {
     border-bottom: 1px solid;
-    width: 100%; }
+    width: 91%;
+    position: absolute; }
   .country-section .contact-us-p {
     display: inline-block;
     padding-right: 120PX;

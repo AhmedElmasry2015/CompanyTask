@@ -162,9 +162,13 @@ html
         display: inline-block;
         margin-right: 4.1%;
         width:100px;
+        text-align: center;
         cursor: pointer;
         p{
             text-align: center;
+            color:$countryMainColor;
+        }
+        .fa-angle-down{
             color:$countryMainColor;
         }
     }
@@ -210,7 +214,8 @@ html
     }
     .bor{
         border-bottom: 1px solid;
-        width:100%;
+        width:91%;
+        position: absolute;
     }
     .contact-us-p{
         display: inline-block;

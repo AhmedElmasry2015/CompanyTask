@@ -2,20 +2,20 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const imageMin = require('gulp-imagemin'); 
+//const imageMin = require('gulp-imagemin'); 
 //const concat =require('gulp-concat');
 const uglify = require('gulp-uglify');
 gulp.task("copyHtml",function(){
-    gulp.src('./*.html')
-       .pipe(gulp.dest('Dist'));
+    gulp.src('.js/*.js')
+       .pipe(gulp.dest('Dist/js'));
    });
   
 // optimize images 
-gulp.task('imageMin',()=>
+/*gulp.task('imageMin',()=>
 gulp.src('images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('Dist/images'))
-);
+);*/
 
 gulp.task("minfy",function(){
     gulp.src('js/*.js')
@@ -42,4 +42,4 @@ gulp.task("sass",function(){
     });
 
     
-    /*gulp.task("default",["serve"]);*/
+    gulp.task("default",["serve"]);
